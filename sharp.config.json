@@ -4,6 +4,12 @@
   },
   "webp": {
     "quality": 75
+  },
+  "jpeg": {
+    "quality": 65
+  },
+  "png": {
+    "compressionLevel": 9,
+    "effort": 10
   }
-
 }
