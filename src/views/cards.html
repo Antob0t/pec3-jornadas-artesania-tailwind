@@ -1,0 +1,19 @@
+<div class="group flex flex-col flex-[1_1_320px] max-w-[450px] border-4 border-primary bg-white transition-all duration-300 ease-in-out hover:-translate-y-2.5 hover:shadow-[15px_15px_0_0_theme(colors.secondary)]">
+  
+  <img src="/src/assets/images/{{imagen}}" class="h-[400px] w-full object-cover object-top border-b-4 border-primary grayscale opacity-80 transition-all duration-500 ease-in-out group-hover:grayscale-0 group-hover:opacity-100" alt="Foto de {{nombre}}">
+  
+  <div class="p-8 flex flex-col flex-grow text-primary">
+    <h2 class="self-center font-title text-[1.8rem] uppercase mb-4 text-center">
+      {{nombre}}
+    </h2>
+    <h3 class="font-mono text-[0.9rem] text-primary/70 bg-secondary/50 p-2 mb-4 uppercase">
+      {{tags}}
+    </h3>
+    <p class="font-mono text-[0.85rem] leading-[1.6] opacity-80 flex-grow mb-8">
+      {{descripcion}}
+    </p>
+    <a href="https://www.instagram.com/{{usuario}}" class="self-center text-[1.5rem] py-2 px-6 bg-secondary text-primary border-2 border-primary shadow-[4px_4px_0_0_theme(colors.primary)] transition-all duration-300 ease-in-out hover:bg-primary hover:text-secondary hover:shadow-none hover:translate-x-1 hover:translate-y-1" aria-label="Instagram de {{nombre}}">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+  </div>
+</div>

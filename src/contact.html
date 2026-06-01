@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.css"/>
+    <title>Contacto | II Jornadas de Artesania</title>
+    <meta name="description" content="II Jornadas de Artesania en Alcalá del Jucar, Albacete.">
+    <meta name="keywords" content="jornadas, artesania, alcala del jucar, albacete, medieval, mercado, medieval, feria, mercadillo, artesano, artesanos">
+    <meta name="author" content="Antolín Murcia Navarro">
+    <link rel="icon" type="image/png" href="/src/assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/src/assets/images/favicon/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis:YEAR@1979&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Skranji:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-background min-h-screen flex flex-col">
+    
+    <include src="./views/nav.html"></include>
+    
+    <include src="./views/breadcrumbs.html" locals='{ "pagina_actual": "Contacto" }'></include>
+
+    <main class="w-[80vw] lg:w-[70vw] mx-auto py-16 flex-grow flex flex-col items-center">
+      
+      <h1 class="font-title text-[clamp(2rem,8cqw,4rem)] text-primary uppercase [text-shadow:4px_4px_0_theme(colors.secondary)] text-center mb-8">
+        Contacto
+      </h1>
+      <p class="font-mono text-[1.1rem] leading-[1.8] opacity-90 text-center mb-12 text-primary max-w-[800px]">
+        Si deseas ponerte en contacto con nosotros para obtener más información sobre las II Jornadas de Artesania, tienes alguna pregunta o quieres colaborar con el evento, no dudes en enviarnos un mensaje a través del siguiente formulario de contacto:
+      </p>
+
+      <form class="w-full max-w-[800px] bg-white p-8 md:p-12 border-4 border-primary shadow-[15px_15px_0_0_theme(colors.secondary)] mb-16">
+        
+        <include src="./views/input-grupo.html" locals='{
+          "id": "nombre",
+          "type": "text",
+          "label": "Nombre:",
+          "placeholder": "Tu nombre completo"
+        }'></include>
+
+        <include src="./views/input-grupo.html" locals='{
+          "id": "email",
+          "type": "email",
+          "label": "Correo electrónico:",
+          "placeholder": "nombre@ejemplo.com"
+        }'></include>
+
+        <div class="mb-6 flex flex-col gap-2">
+          <label for="mensaje" class="font-title text-[1.2rem] text-primary uppercase tracking-wide">
+            Mensaje:
+          </label>
+          <textarea id="mensaje" name="mensaje" rows="5" class="input-contacto resize-y min-h-[150px]" placeholder="Tu mensaje..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-contacto">
+          Enviar
+        </button>
+        
+      </form>
+
+      <p class="font-mono text-[1.1rem] opacity-90 text-center mb-8 text-primary">
+        También puedes contactarnos a través de nuestras redes sociales:
+      </p>
+      
+      <ul class="flex flex-wrap justify-center gap-6 font-mono font-bold">
+        <li>
+            <include src="./views/boton-contacto.html" locals='{
+              "enlace": "https://www.facebook.com/alcaladeljucar",
+              "icono": "fa-facebook",
+              "red": "Facebook"
+            }'></include>
+        </li>
+        <li>
+            <include src="./views/boton-contacto.html" locals='{
+              "enlace": "https://www.instagram.com/alcaladeljucar",
+              "icono": "fa-instagram",
+              "red": "Instagram"
+            }'></include>
+        </li>
+        <li>
+            <include src="./views/boton-contacto.html" locals='{
+              "enlace": "https://www.twitter.com/alcaladeljucar",
+              "icono": "fa-twitter",
+              "red": "Twitter"
+            }'></include>
+        </li>
+      </ul>
+
+    </main>
+
+    <include src="./views/footer.html"></include>
+    <script type="module" src="./assets/scripts/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.css"/>
+    <title>Ponentes | II Jornadas de Artesania</title>
+    <meta name="description" content="II Jornadas de Artesania en Alcalá del Jucar, Albacete.">
+    <meta name="keywords" content="jornadas, artesania, alcala del jucar, albacete, medieval, mercado, medieval, feria, mercadillo, artesano, artesanos">
+    <meta name="author" content="Antolín Murcia Navarro">
+    <link rel="icon" type="image/png" href="/src/assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/src/assets/images/favicon/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis:YEAR@1979&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Skranji:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-background min-h-screen flex flex-col">
+    <include src="./views/nav.html"></include>
+    
+    <include src="./views/breadcrumbs.html" locals='{"pagina_actual": "Ponentes"}'></include>
+
+    <main class="mx-auto w-full max-w-[1000px] px-8 py-16 bg-background flex-grow">
+      
+      <h1 class="font-title text-3xl text-center mt-4 mb-8 p-3 text-shadow-[8px_8px_0_var(--color-secondary)] md:text-[6rem] md:mb-12 text-primary uppercase">
+        Ponentes
+      </h1>
+
+      <div class="flex flex-wrap justify-center gap-8 lg:gap-12 mb-16">
+        
+        <include src="views/cards.html" locals='{
+          "usuario": "cris_cocina",
+          "imagen": "cris-cocina.jpg",
+          "nombre": "Cris Cocina",
+          "tags": "Ceramista - Artista",
+          "descripcion": "Cris Cocina es una reconocida artesana especializada en la cerámica tradicional. Con más de 30 años de experiencia, ha participado en numerosas ferias y exposiciones a nivel nacional e internacional, destacando por su habilidad para fusionar técnicas ancestrales con un estilo contemporáneo."
+        }'></include>
+
+        <include src="views/cards.html" locals='{
+          "usuario": "paco_gijon",
+          "imagen": "paco-gijon.jpg",
+          "nombre": "Paco Gijón",
+          "tags": "Ceramista - Artista",
+          "descripcion": "Paco Gijón es un reconocido artesano especializado en la cerámica tradicional. Con más de 30 años de experiencia, ha participado en numerosas ferias y exposiciones a nivel nacional e internacional, destacando por su habilidad para fusionar técnicas ancestrales con un estilo contemporáneo."
+        }'></include>
+
+        <include src="views/cards.html" locals='{
+          "usuario": "tia_paula",
+          "imagen": "tia-paula.jpg",
+          "nombre": "Tía Paula",
+          "tags": "Tejedora - Cestera",
+          "descripcion": "Tía Paula es una artesana veterana que ha dedicado su vida a preservar las tradiciones artesanales de su región. Conocida por su maestría en el tejido y la cestería, Tía Paula ha sido una figura clave en la transmisión de conocimientos a las nuevas generaciones de artesanos."
+        }'></include>
+
+        <include src="views/cards.html" locals='{
+          "usuario": "beatriz_boroba",
+          "imagen": "beatriz-boroba.jpg",
+          "nombre": "Beatriz Boroba",
+          "tags": "Artista - Innovadora",
+          "descripcion": "Beatriz Boroba es una joven artista que ha revolucionado el mundo de la artesanía con su enfoque innovador. Su trabajo se caracteriza por la combinación de materiales tradicionales con técnicas modernas, creando piezas únicas que han ganado reconocimiento tanto en el ámbito local como internacional."
+        }'></include>
+
+        <include src="views/cards.html" locals='{
+          "usuario": "tania_sanchez",
+          "imagen": "tania-sanchez.jpg",
+          "nombre": "Tania Sánchez",
+          "tags": "Alfarera - Artista",
+          "descripcion": "Tania Sánchez es una experta en alfarería que ha dedicado su carrera a explorar las posibilidades creativas de este arte milenario. Su trabajo se distingue por la experimentación con formas y texturas, lo que le ha permitido crear piezas que desafían las convenciones tradicionales de la alfarería."
+        }'></include>
+
+        <include src="views/cards.html" locals='{
+          "usuario": "grupo_las_marias",
+          "imagen": "las-marias.jpg",
+          "nombre": "Grupo Las Marías",
+          "tags": "Grupo de Folclore - Tradición",
+          "descripcion": "El Grupo Las Marías es un grupo de folclore tradicional que representa la rica herencia cultural de su región. Con años de experiencia en la interpretación de canciones y danzas ancestrales, han sido fundamentales en la preservación y difusión del patrimonio folclórico local."
+        }'></include>
+
+        <include src="views/cards.html" locals='{
+          "usuario": "dj_ultratumba",
+          "imagen": "dj-ultratumba.jpg",
+          "nombre": "DJ Ultratumba",
+          "tags": "DJ - Innovador",
+          "descripcion": "DJ Ultratumba es un innovador DJ que ha ganado notoriamente por su capacidad para fusionar sonidos tradicionales con música electrónica. Su estilo único ha capturado la atención de audiencias de todo el mundo, convirtiéndolo en una figura destacada en la escena musical contemporánea."
+        }'></include>
+
+      </div>
+    </main>
+
+    <include src="./views/footer.html"></include>
+    <script type="module" src="./assets/scripts/main.js"></script>
+  </body>
+</html>
