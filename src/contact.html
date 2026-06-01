@@ -20,16 +20,16 @@
     
     <include src="./views/breadcrumbs.html" locals='{ "pagina_actual": "Contacto" }'></include>
 
-    <main class="w-[80vw] lg:w-[70vw] mx-auto py-16 flex-grow flex flex-col items-center">
+    <main class="w-[80vw] lg:w-[70vw] mx-auto py-16 grow flex flex-col items-center">
       
-      <h1 class="font-title text-[clamp(2rem,8cqw,4rem)] text-primary uppercase [text-shadow:4px_4px_0_theme(colors.secondary)] text-center mb-8">
+      <h1 class="font-title text-[clamp(2rem,8cqw,4rem)] text-primary uppercase [text-shadow:4px_4px_0_var(--color-secondary)] text-center mb-8">
         Contacto
       </h1>
       <p class="font-mono text-[1.1rem] leading-[1.8] opacity-90 text-center mb-12 text-primary max-w-[800px]">
         Si deseas ponerte en contacto con nosotros para obtener más información sobre las II Jornadas de Artesania, tienes alguna pregunta o quieres colaborar con el evento, no dudes en enviarnos un mensaje a través del siguiente formulario de contacto:
       </p>
 
-      <form class="w-full max-w-[800px] bg-white p-8 md:p-12 border-4 border-primary shadow-[15px_15px_0_0_theme(colors.secondary)] mb-16">
+      <form class="w-full max-w-[800px] bg-white p-8 md:p-12 border-4 border-primary shadow-[15px_15px_0_0_var(--color-secondary)] mb-16">
         
         <include src="./views/input-grupo.html" locals='{
           "id": "nombre",

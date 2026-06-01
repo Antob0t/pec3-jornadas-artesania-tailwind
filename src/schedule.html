@@ -17,45 +17,35 @@
   <body class="bg-background min-h-screen flex flex-col">
     <include src="views/nav.html"></include>
     
-    <main class="max-w-7xl w-full mx-auto p-4 md:p-12 lg:p-20 flex flex-col gap-12 lg:gap-16 flex-grow overflow-hidden">
+    <main class="max-w-7xl w-full mx-auto p-4 md:p-12 lg:p-20 flex flex-col gap-12 lg:gap-16 grow overflow-hidden">
       
-      <!-- Banner superior -->
-      <div class="flex flex-col sm:flex-row justify-between items-center gap-4 border-4 border-primary bg-white p-4 sm:p-6 shadow-[8px_8px_0_0_theme(colors.primary)]">
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-4 border-4 border-primary bg-white p-4 sm:p-6 shadow-[8px_8px_0_0_var(--color-primary)]">
         <p class="font-mono font-black uppercase tracking-widest text-sm sm:text-base lg:text-lg text-primary text-center sm:text-left">
           Alcalá del Júcar // Programa Oficial
         </p>
-        <p class="font-title text-xl sm:text-2xl text-white bg-primary px-4 py-1 border-2 border-primary shadow-[4px_4px_0_0_theme(colors.primary)] mt-2 sm:mt-0">
+        <p class="font-title text-xl sm:text-2xl text-white bg-primary px-4 py-1 border-2 border-primary shadow-[4px_4px_0_0_var(--color-primary)] mt-2 sm:mt-0">
           2026
         </p>
       </div>
 
       <section class="flex flex-col gap-16 lg:gap-20">
         
-        <!-- Cabecera de la Sección y Botón PDF Funcional -->
         <div class="flex flex-col md:flex-row justify-between md:items-end gap-6 border-b-4 border-primary pb-6">
-          <!-- Corrección tamaño móvil extremo para que no parta la palabra -->
           <h1 class="font-title text-3xl sm:text-5xl md:text-7xl lg:text-8xl text-primary uppercase leading-none">
             Horario
           </h1>
-          <!-- Botón PDF -->
           <a href="#" download="Programa_Jornadas_Artesania.pdf" class="font-mono font-bold text-primary text-xs sm:text-sm uppercase tracking-widest bg-white hover:bg-secondary border-4 border-primary px-4 sm:px-6 py-3 shadow-[4px_4px_0_0_theme(colors.primary)] hover:shadow-none translate-y-0 hover:translate-y-[4px] hover:translate-x-[4px] active:translate-y-[8px] active:translate-x-[8px] transition-all flex items-center justify-center gap-4 group cursor-pointer whitespace-nowrap self-start md:self-auto">
             Descargar PDF 
             <span class="text-xl group-hover:translate-y-1 transition-transform">↓</span>
           </a>
         </div>
 
-        <!-- ================= BLOQUE: JUEVES ================= -->
-        <!-- Cambio a flex-col puro para apilar fecha encima de cards en todos los formatos -->
         <div class="flex flex-col gap-8 w-full">
-          
-          <!-- Bloque de Fecha: Siempre apilado (flex-col) y ocupando el 100% (w-full) -->
           <div class="w-full flex flex-col items-start gap-1 border-l-8 border-primary pl-4 sm:pl-6 py-2">
             <p class="font-mono text-lg sm:text-xl md:text-2xl font-black text-primary uppercase tracking-wider">Jueves</p>
             <p class="font-title text-5xl sm:text-6xl md:text-7xl text-primary leading-none">12.07</p>
             <p class="font-mono text-base sm:text-lg md:text-xl font-bold text-secondary uppercase tracking-widest">Julio</p>
           </div>
-
-          <!-- Carrusel de Tarjetas: Abajo y al 100% de ancho -->
           <div class="w-full flex overflow-x-auto gap-6 pb-8 snap-x pt-2 px-2 scrollbar-thin">
             
             <article class="group snap-start min-w-[280px] sm:min-w-[320px] md:min-w-[340px] border-4 border-primary bg-white hover:bg-secondary p-5 sm:p-6 shadow-[8px_8px_0_0_theme(colors.primary)] flex flex-col justify-between gap-6 hover:-translate-y-2 transition-all duration-300">
@@ -63,7 +53,7 @@
                 <span class="inline-block font-mono font-black text-xs text-secondary group-hover:text-primary bg-primary group-hover:bg-white px-3 py-1 border-2 border-primary text-center uppercase tracking-widest self-start transition-colors">
                   09:00 - 14:00
                 </span>
-                <h3 class="font-title text-xl md:text-2xl text-primary uppercase leading-tight break-words">
+                <h3 class="font-title text-xl md:text-2xl text-primary uppercase leading-tight wrap-break-words">
                   Feria de artesanos
                 </h3>
               </div>
@@ -78,7 +68,7 @@
                 <span class="inline-block font-mono font-black text-xs text-secondary group-hover:text-primary bg-primary group-hover:bg-white px-3 py-1 border-2 border-primary text-center uppercase tracking-widest self-start transition-colors">
                   14:00 - 16:00
                 </span>
-                <h3 class="font-title text-xl md:text-2xl text-primary uppercase leading-tight break-words">
+                <h3 class="font-title text-xl md:text-2xl text-primary uppercase leading-tight wrap-break-words">
                   Talleres de artesanía
                 </h3>
               </div>
@@ -88,12 +78,12 @@
               </div>
             </article>
 
-            <article class="group snap-start min-w-[280px] sm:min-w-[320px] md:min-w-[340px] border-4 border-primary bg-white hover:bg-secondary p-5 sm:p-6 shadow-[8px_8px_0_0_theme(colors.primary)] flex flex-col justify-between gap-6 hover:-translate-y-2 transition-all duration-300">
+            <article class="group snap-start min-w-[280px] sm:min-w-[320px] md:min-w-[340px] border-4 border-primary bg-white hover:bg-secondary p-5 sm:p-6 shadow-[8px_8px_0_0_var(--color-primary)] flex flex-col justify-between gap-6 hover:-translate-y-2 transition-all duration-300">
               <div class="flex flex-col gap-4">
                 <span class="inline-block font-mono font-black text-xs text-secondary group-hover:text-primary bg-primary group-hover:bg-white px-3 py-1 border-2 border-primary text-center uppercase tracking-widest self-start transition-colors">
                   16:00 - 18:00
                 </span>
-                <h3 class="font-title text-xl md:text-2xl text-primary uppercase leading-tight break-words">
+                <h3 class="font-title text-xl md:text-2xl text-primary uppercase leading-tight wrap-break-words">
                   Exhibiciones en vivo
                 </h3>
               </div>
@@ -103,12 +93,12 @@
               </div>
             </article>
 
-            <article class="group snap-start min-w-[280px] sm:min-w-[320px] md:min-w-[340px] border-4 border-primary bg-white hover:bg-secondary p-5 sm:p-6 shadow-[8px_8px_0_0_theme(colors.primary)] flex flex-col justify-between gap-6 hover:-translate-y-2 transition-all duration-300">
+            <article class="group snap-start min-w-[280px] sm:min-w-[320px] md:min-w-[340px] border-4 border-primary bg-white hover:bg-secondary p-5 sm:p-6 shadow-[8px_8px_0_0_var(--color-primary)] flex flex-col justify-between gap-6 hover:-translate-y-2 transition-all duration-300">
               <div class="flex flex-col gap-4">
                 <span class="inline-block font-mono font-black text-xs text-secondary group-hover:text-primary bg-primary group-hover:bg-white px-3 py-1 border-2 border-primary text-center uppercase tracking-widest self-start transition-colors">
                   18:00 - 20:00
                 </span>
-                <h3 class="font-title text-xl md:text-2xl text-primary uppercase leading-tight break-words">
+                <h3 class="font-title text-xl md:text-2xl text-primary uppercase leading-tight wrap-break-words">
                   Conferencias
                 </h3>
               </div>
@@ -118,12 +108,12 @@
               </div>
             </article>
 
-            <article class="group snap-start min-w-[280px] sm:min-w-[320px] md:min-w-[340px] border-4 border-primary bg-white hover:bg-secondary p-5 sm:p-6 shadow-[8px_8px_0_0_theme(colors.primary)] flex flex-col justify-between gap-6 hover:-translate-y-2 transition-all duration-300">
+            <article class="group snap-start min-w-[280px] sm:min-w-[320px] md:min-w-[340px] border-4 border-primary bg-white hover:bg-secondary p-5 sm:p-6 shadow-[8px_8px_0_0_var(--color-primary)] flex flex-col justify-between gap-6 hover:-translate-y-2 transition-all duration-300">
               <div class="flex flex-col gap-4">
                 <span class="inline-block font-mono font-black text-xs text-secondary group-hover:text-primary bg-primary group-hover:bg-white px-3 py-1 border-2 border-primary text-center uppercase tracking-widest self-start transition-colors">
                   20:00 - 22:00
                 </span>
-                <h3 class="font-title text-xl md:text-2xl text-primary uppercase leading-tight break-words">
+                <h3 class="font-title text-xl md:text-2xl text-primary uppercase leading-tight wrap-break-words">
                   Actividades para niños
                 </h3>
               </div>
@@ -151,12 +141,12 @@
 
           <div class="w-full flex overflow-x-auto gap-6 pb-8 snap-x pt-2 px-2 scrollbar-thin">
             
-            <article class="group snap-start min-w-[280px] sm:min-w-[320px] md:min-w-[340px] border-4 border-primary bg-white hover:bg-secondary p-5 sm:p-6 shadow-[8px_8px_0_0_theme(colors.primary)] flex flex-col justify-between gap-6 hover:-translate-y-2 transition-all duration-300">
+            <article class="group snap-start min-w-[280px] sm:min-w-[320px] md:min-w-[340px] border-4 border-primary bg-white hover:bg-secondary p-5 sm:p-6 shadow-[8px_8px_0_0_var(--color-primary)] flex flex-col justify-between gap-6 hover:-translate-y-2 transition-all duration-300">
               <div class="flex flex-col gap-4">
                 <span class="inline-block font-mono font-black text-xs text-secondary group-hover:text-primary bg-primary group-hover:bg-white px-3 py-1 border-2 border-primary text-center uppercase tracking-widest self-start transition-colors">
                   09:00 - 14:00
                 </span>
-                <h3 class="font-title text-xl md:text-2xl text-primary uppercase leading-tight break-words">
+                <h3 class="font-title text-xl md:text-2xl text-primary uppercase leading-tight wrap-break-words">
                   Feria de artesanos
                 </h3>
               </div>
@@ -166,12 +156,12 @@
               </div>
             </article>
 
-            <article class="group snap-start min-w-[280px] sm:min-w-[320px] md:min-w-[340px] border-4 border-primary bg-white hover:bg-secondary p-5 sm:p-6 shadow-[8px_8px_0_0_theme(colors.primary)] flex flex-col justify-between gap-6 hover:-translate-y-2 transition-all duration-300">
+            <article class="group snap-start min-w-[280px] sm:min-w-[320px] md:min-w-[340px] border-4 border-primary bg-white hover:bg-secondary p-5 sm:p-6 shadow-[8px_8px_0_0_var(--color-primary)] flex flex-col justify-between gap-6 hover:-translate-y-2 transition-all duration-300">
               <div class="flex flex-col gap-4">
                 <span class="inline-block font-mono font-black text-xs text-secondary group-hover:text-primary bg-primary group-hover:bg-white px-3 py-1 border-2 border-primary text-center uppercase tracking-widest self-start transition-colors">
                   12:00 - 14:00
                 </span>
-                <h3 class="font-title text-xl md:text-2xl text-primary uppercase leading-tight break-words">
+                <h3 class="font-title text-xl md:text-2xl text-primary uppercase leading-tight wrap-break-words">
                   Conciertos de folclore
                 </h3>
               </div>
@@ -181,12 +171,12 @@
               </div>
             </article>
 
-            <article class="group snap-start min-w-[280px] sm:min-w-[320px] md:min-w-[340px] border-4 border-primary bg-white hover:bg-secondary p-5 sm:p-6 shadow-[8px_8px_0_0_theme(colors.primary)] flex flex-col justify-between gap-6 hover:-translate-y-2 transition-all duration-300">
+            <article class="group snap-start min-w-[280px] sm:min-w-[320px] md:min-w-[340px] border-4 border-primary bg-white hover:bg-secondary p-5 sm:p-6 shadow-[8px_8px_0_0_var(--color-primary)] flex flex-col justify-between gap-6 hover:-translate-y-2 transition-all duration-300">
               <div class="flex flex-col gap-4">
                 <span class="inline-block font-mono font-black text-xs text-secondary group-hover:text-primary bg-primary group-hover:bg-white px-3 py-1 border-2 border-primary text-center uppercase tracking-widest self-start transition-colors">
                   14:00 - 16:00
                 </span>
-                <h3 class="font-title text-xl md:text-2xl text-primary uppercase leading-tight break-words">
+                <h3 class="font-title text-xl md:text-2xl text-primary uppercase leading-tight wrap-break-words">
                   Charlas de alfarería
                 </h3>
               </div>
@@ -196,12 +186,12 @@
               </div>
             </article>
 
-            <article class="group snap-start min-w-[280px] sm:min-w-[320px] md:min-w-[340px] border-4 border-primary bg-white hover:bg-secondary p-5 sm:p-6 shadow-[8px_8px_0_0_theme(colors.primary)] flex flex-col justify-between gap-6 hover:-translate-y-2 transition-all duration-300">
+            <article class="group snap-start min-w-[280px] sm:min-w-[320px] md:min-w-[340px] border-4 border-primary bg-white hover:bg-secondary p-5 sm:p-6 shadow-[8px_8px_0_0_var(--color-primary)] flex flex-col justify-between gap-6 hover:-translate-y-2 transition-all duration-300">
               <div class="flex flex-col gap-4">
                 <span class="inline-block font-mono font-black text-xs text-secondary group-hover:text-primary bg-primary group-hover:bg-white px-3 py-1 border-2 border-primary text-center uppercase tracking-widest self-start transition-colors">
                   17:00 - 20:00
                 </span>
-                <h3 class="font-title text-xl md:text-2xl text-primary uppercase leading-tight break-words">
+                <h3 class="font-title text-xl md:text-2xl text-primary uppercase leading-tight wrap-break-words">
                   Fiesta pagana
                 </h3>
               </div>
