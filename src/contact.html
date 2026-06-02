@@ -29,7 +29,8 @@
         Si deseas ponerte en contacto con nosotros para obtener más información sobre las II Jornadas de Artesania, tienes alguna pregunta o quieres colaborar con el evento, no dudes en enviarnos un mensaje a través del siguiente formulario de contacto:
       </p>
 
-      <form class="w-full max-w-[800px] bg-white p-8 md:p-12 border-4 border-primary shadow-[15px_15px_0_0_var(--color-secondary)] mb-16">
+      <form class="w-full max-w-[800px] bg-white p-8 md:p-12 border-4 border-primary shadow-[15px_15px_0_0_var(--color-secondary)] mb-16" name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact" />
         
         <include src="./views/input-grupo.html" locals='{
           "id": "nombre",

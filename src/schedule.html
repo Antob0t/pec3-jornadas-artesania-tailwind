@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.css"/>
-    <title>Horario | II Jornadas de Artesania | Alcalá del Jucar</title>
+    <title>Programa | II Jornadas de Artesania | Alcalá del Jucar</title>
     <meta name="description" content="Cronograma y horarios de las II Jornadas de Artesania en Alcalá del Jucar, Albacete.">
     <meta name="keywords" content="jornadas, artesania, alcala del jucar, albacete, medieval, mercado, cronograma, horario, eventos, feria">
     <meta name="author" content="Antolín Murcia Navarro">
@@ -16,6 +16,7 @@
   </head>
   <body class="bg-background min-h-screen flex flex-col">
     <include src="views/nav.html"></include>
+    <include src="./views/breadcrumbs.html" locals='{"pagina_actual": "Programa"}'></include>
     
     <main class="max-w-7xl w-full mx-auto p-4 md:p-12 lg:p-20 flex flex-col gap-12 lg:gap-16 grow overflow-hidden">
       
@@ -48,7 +49,7 @@
           </div>
           <div class="w-full flex overflow-x-auto gap-6 pb-8 snap-x pt-2 px-2 scrollbar-thin">
             
-            <article class="group snap-start min-w-[280px] sm:min-w-[320px] md:min-w-[340px] border-4 border-primary bg-white hover:bg-secondary p-5 sm:p-6 shadow-[8px_8px_0_0_theme(colors.primary)] flex flex-col justify-between gap-6 hover:-translate-y-2 transition-all duration-300">
+          <section class="group snap-start min-w-[280px] sm:min-w-[320px] md:min-w-[340px] border-4 border-primary bg-white hover:bg-secondary p-5 sm:p-6 shadow-[8px_8px_0_0_theme(colors.primary)] flex flex-col justify-between gap-6 hover:-translate-y-2 transition-all duration-300">
               <div class="flex flex-col gap-4">
                 <span class="inline-block font-mono font-black text-xs text-secondary group-hover:text-primary bg-primary group-hover:bg-white px-3 py-1 border-2 border-primary text-center uppercase tracking-widest self-start transition-colors">
                   09:00 - 14:00
@@ -61,13 +62,13 @@
                 <p class="font-mono text-xs text-primary/60 uppercase mb-1">Espacio</p>
                 <p class="font-special text-lg text-primary">Plaza Mayor</p>
               </div>
-            </article>
+            </section>
 
-            <article class="group snap-start min-w-[280px] sm:min-w-[320px] md:min-w-[340px] border-4 border-primary bg-white hover:bg-secondary p-5 sm:p-6 shadow-[8px_8px_0_0_theme(colors.primary)] flex flex-col justify-between gap-6 hover:-translate-y-2 transition-all duration-300">
+            <section class="group snap-start min-w-[280px] sm:min-w-[320px] md:min-w-[340px] border-4 border-primary bg-white hover:bg-secondary p-5 sm:p-6 shadow-[8px_8px_0_0_var(--color-primary)] flex flex-col justify-between gap-6 hover:-translate-y-2 transition-all duration-300">
               <div class="flex flex-col gap-4">
-                <span class="inline-block font-mono font-black text-xs text-secondary group-hover:text-primary bg-primary group-hover:bg-white px-3 py-1 border-2 border-primary text-center uppercase tracking-widest self-start transition-colors">
+                <time class="inline-block font-mono font-black text-xs text-secondary group-hover:text-primary bg-primary group-hover:bg-white px-3 py-1 border-2 border-primary text-center uppercase tracking-widest self-start transition-colors">
                   14:00 - 16:00
-                </span>
+                </time>
                 <h3 class="font-title text-xl md:text-2xl text-primary uppercase leading-tight wrap-break-words">
                   Talleres de artesanía
                 </h3>
@@ -76,13 +77,13 @@
                 <p class="font-mono text-xs text-primary/60 uppercase mb-1">A cargo de</p>
                 <p class="font-special text-xl text-primary font-bold">Cris Cocina</p>
               </div>
-            </article>
+            </section>
 
-            <article class="group snap-start min-w-[280px] sm:min-w-[320px] md:min-w-[340px] border-4 border-primary bg-white hover:bg-secondary p-5 sm:p-6 shadow-[8px_8px_0_0_var(--color-primary)] flex flex-col justify-between gap-6 hover:-translate-y-2 transition-all duration-300">
+            <section class="group snap-start min-w-[280px] sm:min-w-[320px] md:min-w-[340px] border-4 border-primary bg-white hover:bg-secondary p-5 sm:p-6 shadow-[8px_8px_0_0_var(--color-primary)] flex flex-col justify-between gap-6 hover:-translate-y-2 transition-all duration-300">
               <div class="flex flex-col gap-4">
-                <span class="inline-block font-mono font-black text-xs text-secondary group-hover:text-primary bg-primary group-hover:bg-white px-3 py-1 border-2 border-primary text-center uppercase tracking-widest self-start transition-colors">
+                <time class="inline-block font-mono font-black text-xs text-secondary group-hover:text-primary bg-primary group-hover:bg-white px-3 py-1 border-2 border-primary text-center uppercase tracking-widest self-start transition-colors">
                   16:00 - 18:00
-                </span>
+                </time>
                 <h3 class="font-title text-xl md:text-2xl text-primary uppercase leading-tight wrap-break-words">
                   Exhibiciones en vivo
                 </h3>
@@ -91,13 +92,13 @@
                 <p class="font-mono text-xs text-primary/60 uppercase mb-1">Artistas</p>
                 <p class="font-special text-xl text-primary font-bold">Beatriz Boroba</p>
               </div>
-            </article>
+            </section>
 
-            <article class="group snap-start min-w-[280px] sm:min-w-[320px] md:min-w-[340px] border-4 border-primary bg-white hover:bg-secondary p-5 sm:p-6 shadow-[8px_8px_0_0_var(--color-primary)] flex flex-col justify-between gap-6 hover:-translate-y-2 transition-all duration-300">
+            <section class="group snap-start min-w-[280px] sm:min-w-[320px] md:min-w-[340px] border-4 border-primary bg-white hover:bg-secondary p-5 sm:p-6 shadow-[8px_8px_0_0_var(--color-primary)] flex flex-col justify-between gap-6 hover:-translate-y-2 transition-all duration-300">
               <div class="flex flex-col gap-4">
-                <span class="inline-block font-mono font-black text-xs text-secondary group-hover:text-primary bg-primary group-hover:bg-white px-3 py-1 border-2 border-primary text-center uppercase tracking-widest self-start transition-colors">
+                <time class="inline-block font-mono font-black text-xs text-secondary group-hover:text-primary bg-primary group-hover:bg-white px-3 py-1 border-2 border-primary text-center uppercase tracking-widest self-start transition-colors">
                   18:00 - 20:00
-                </span>
+                </time>
                 <h3 class="font-title text-xl md:text-2xl text-primary uppercase leading-tight wrap-break-words">
                   Conferencias
                 </h3>
@@ -106,13 +107,13 @@
                 <p class="font-mono text-xs text-primary/60 uppercase mb-1">Ponentes</p>
                 <p class="font-special text-base text-primary leading-tight">Paco Gijón y Tía Paula</p>
               </div>
-            </article>
+            </section>
 
-            <article class="group snap-start min-w-[280px] sm:min-w-[320px] md:min-w-[340px] border-4 border-primary bg-white hover:bg-secondary p-5 sm:p-6 shadow-[8px_8px_0_0_var(--color-primary)] flex flex-col justify-between gap-6 hover:-translate-y-2 transition-all duration-300">
+            <section class="group snap-start min-w-[280px] sm:min-w-[320px] md:min-w-[340px] border-4 border-primary bg-white hover:bg-secondary p-5 sm:p-6 shadow-[8px_8px_0_0_var(--color-primary)] flex flex-col justify-between gap-6 hover:-translate-y-2 transition-all duration-300">
               <div class="flex flex-col gap-4">
-                <span class="inline-block font-mono font-black text-xs text-secondary group-hover:text-primary bg-primary group-hover:bg-white px-3 py-1 border-2 border-primary text-center uppercase tracking-widest self-start transition-colors">
+                <time class="inline-block font-mono font-black text-xs text-secondary group-hover:text-primary bg-primary group-hover:bg-white px-3 py-1 border-2 border-primary text-center uppercase tracking-widest self-start transition-colors">
                   20:00 - 22:00
-                </span>
+                </time>
                 <h3 class="font-title text-xl md:text-2xl text-primary uppercase leading-tight wrap-break-words">
                   Actividades para niños
                 </h3>
@@ -121,18 +122,15 @@
                 <p class="font-mono text-xs text-primary/60 uppercase mb-1">Zona</p>
                 <p class="font-special text-lg text-primary">Taller Infantil Castillo</p>
               </div>
-            </article>
+            </section>
 
           </div>
         </div>
 
-        <!-- Divisor visual -->
         <div class="w-full h-1 border-b-4 border-dashed border-primary/30 my-2"></div>
 
-        <!-- ================= BLOQUE: VIERNES ================= -->
         <div class="flex flex-col gap-8 w-full">
           
-          <!-- Bloque de Fecha: Siempre apilado -->
           <div class="w-full flex flex-col items-start gap-1 border-l-8 border-primary pl-4 sm:pl-6 py-2">
             <p class="font-mono text-lg sm:text-xl md:text-2xl font-black text-primary uppercase tracking-wider">Viernes</p>
             <p class="font-title text-5xl sm:text-6xl md:text-7xl text-primary leading-none">13.07</p>
@@ -141,11 +139,11 @@
 
           <div class="w-full flex overflow-x-auto gap-6 pb-8 snap-x pt-2 px-2 scrollbar-thin">
             
-            <article class="group snap-start min-w-[280px] sm:min-w-[320px] md:min-w-[340px] border-4 border-primary bg-white hover:bg-secondary p-5 sm:p-6 shadow-[8px_8px_0_0_var(--color-primary)] flex flex-col justify-between gap-6 hover:-translate-y-2 transition-all duration-300">
+            <section class="group snap-start min-w-[280px] sm:min-w-[320px] md:min-w-[340px] border-4 border-primary bg-white hover:bg-secondary p-5 sm:p-6 shadow-[8px_8px_0_0_var(--color-primary)] flex flex-col justify-between gap-6 hover:-translate-y-2 transition-all duration-300">
               <div class="flex flex-col gap-4">
-                <span class="inline-block font-mono font-black text-xs text-secondary group-hover:text-primary bg-primary group-hover:bg-white px-3 py-1 border-2 border-primary text-center uppercase tracking-widest self-start transition-colors">
+                <time class="inline-block font-mono font-black text-xs text-secondary group-hover:text-primary bg-primary group-hover:bg-white px-3 py-1 border-2 border-primary text-center uppercase tracking-widest self-start transition-colors">
                   09:00 - 14:00
-                </span>
+                </time>
                 <h3 class="font-title text-xl md:text-2xl text-primary uppercase leading-tight wrap-break-words">
                   Feria de artesanos
                 </h3>
@@ -154,13 +152,13 @@
                 <p class="font-mono text-xs text-primary/60 uppercase mb-1">Espacio</p>
                 <p class="font-special text-lg text-primary">Plaza Mayor</p>
               </div>
-            </article>
+            </section>
 
-            <article class="group snap-start min-w-[280px] sm:min-w-[320px] md:min-w-[340px] border-4 border-primary bg-white hover:bg-secondary p-5 sm:p-6 shadow-[8px_8px_0_0_var(--color-primary)] flex flex-col justify-between gap-6 hover:-translate-y-2 transition-all duration-300">
+            <section class="group snap-start min-w-[280px] sm:min-w-[320px] md:min-w-[340px] border-4 border-primary bg-white hover:bg-secondary p-5 sm:p-6 shadow-[8px_8px_0_0_var(--color-primary)] flex flex-col justify-between gap-6 hover:-translate-y-2 transition-all duration-300">
               <div class="flex flex-col gap-4">
-                <span class="inline-block font-mono font-black text-xs text-secondary group-hover:text-primary bg-primary group-hover:bg-white px-3 py-1 border-2 border-primary text-center uppercase tracking-widest self-start transition-colors">
+                <time class="inline-block font-mono font-black text-xs text-secondary group-hover:text-primary bg-primary group-hover:bg-white px-3 py-1 border-2 border-primary text-center uppercase tracking-widest self-start transition-colors">
                   12:00 - 14:00
-                </span>
+                </time>
                 <h3 class="font-title text-xl md:text-2xl text-primary uppercase leading-tight wrap-break-words">
                   Conciertos de folclore
                 </h3>
@@ -169,13 +167,13 @@
                 <p class="font-mono text-xs text-primary/60 uppercase mb-1">Actuación de</p>
                 <p class="font-special text-xl text-primary font-bold">Grupo Las Mariás</p>
               </div>
-            </article>
+            </section>
 
-            <article class="group snap-start min-w-[280px] sm:min-w-[320px] md:min-w-[340px] border-4 border-primary bg-white hover:bg-secondary p-5 sm:p-6 shadow-[8px_8px_0_0_var(--color-primary)] flex flex-col justify-between gap-6 hover:-translate-y-2 transition-all duration-300">
+            <section class="group snap-start min-w-[280px] sm:min-w-[320px] md:min-w-[340px] border-4 border-primary bg-white hover:bg-secondary p-5 sm:p-6 shadow-[8px_8px_0_0_var(--color-primary)] flex flex-col justify-between gap-6 hover:-translate-y-2 transition-all duration-300">
               <div class="flex flex-col gap-4">
-                <span class="inline-block font-mono font-black text-xs text-secondary group-hover:text-primary bg-primary group-hover:bg-white px-3 py-1 border-2 border-primary text-center uppercase tracking-widest self-start transition-colors">
+                <time class="inline-block font-mono font-black text-xs text-secondary group-hover:text-primary bg-primary group-hover:bg-white px-3 py-1 border-2 border-primary text-center uppercase tracking-widest self-start transition-colors">
                   14:00 - 16:00
-                </span>
+                </time>
                 <h3 class="font-title text-xl md:text-2xl text-primary uppercase leading-tight wrap-break-words">
                   Charlas de alfarería
                 </h3>
@@ -184,13 +182,13 @@
                 <p class="font-mono text-xs text-primary/60 uppercase mb-1">A cargo de</p>
                 <p class="font-special text-xl text-primary font-bold">Tania Sanchéz</p>
               </div>
-            </article>
+            </section>
 
-            <article class="group snap-start min-w-[280px] sm:min-w-[320px] md:min-w-[340px] border-4 border-primary bg-white hover:bg-secondary p-5 sm:p-6 shadow-[8px_8px_0_0_var(--color-primary)] flex flex-col justify-between gap-6 hover:-translate-y-2 transition-all duration-300">
+            <section class="group snap-start min-w-[280px] sm:min-w-[320px] md:min-w-[340px] border-4 border-primary bg-white hover:bg-secondary p-5 sm:p-6 shadow-[8px_8px_0_0_var(--color-primary)] flex flex-col justify-between gap-6 hover:-translate-y-2 transition-all duration-300">
               <div class="flex flex-col gap-4">
-                <span class="inline-block font-mono font-black text-xs text-secondary group-hover:text-primary bg-primary group-hover:bg-white px-3 py-1 border-2 border-primary text-center uppercase tracking-widest self-start transition-colors">
+                <time class="inline-block font-mono font-black text-xs text-secondary group-hover:text-primary bg-primary group-hover:bg-white px-3 py-1 border-2 border-primary text-center uppercase tracking-widest self-start transition-colors">
                   17:00 - 20:00
-                </span>
+                </time>
                 <h3 class="font-title text-xl md:text-2xl text-primary uppercase leading-tight wrap-break-words">
                   Fiesta pagana
                 </h3>
@@ -199,14 +197,13 @@
                 <p class="font-mono text-xs text-primary/60 uppercase mb-1">Música por</p>
                 <p class="font-special text-xl text-primary font-bold">DJ Ultratumba</p>
               </div>
-            </article>
+            </section>
 
           </div>
         </div>
 
       </section>
 
-      <!-- Patrocinadores -->
       <div class="flex flex-col items-center gap-6 border-4 border-primary bg-white p-6 shadow-[8px_8px_0_0_theme(colors.primary)] mt-4">
         <h4 class="font-mono text-xs font-black uppercase tracking-widest text-primary/40 text-center break-words">Colaboran / Patrocinan</h4>
         

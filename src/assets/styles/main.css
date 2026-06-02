@@ -17,24 +17,24 @@
     @apply relative pt-16 [counter-increment:brutal-counter] 
            before:content-[counter(brutal-counter)] before:absolute before:-top-8 before:left-0 
            before:font-title before:text-[4rem] before:text-secondary before:leading-none 
-           before:[text-shadow:3px_3px_0_theme(--color-primary)];
+           before:[text-shadow:3px_3px_0_var(--color-primary)];
   }
   
-  .caja-cta {
+  .caja-cita {
     @apply max-w-[700px] mx-auto mb-8 p-8 border-2 border-primary bg-primary/2 
            text-center opacity-100 leading-[1.8]
-           shadow-[8px_8px_0_0_theme(--color-secondary)];
+           shadow-[8px_8px_0_0_var(--color-secondary)];
   }
 }
 @layer components{
   .input-contacto {
       @apply w-full border-[3px] border-primary p-4 font-mono text-primary outline-none transition-all duration-300
-        focus:bg-white focus:shadow-[4px_4px_0_0_theme(--color-secondary)] focus:-translate-y-1;
+        focus:bg-white focus:shadow-[4px_4px_0_0_var(--color-secondary)] focus:-translate-y-1;
   }
 
   .btn-contacto {
       @apply block w-full md:w-auto font-title text-2xl uppercase py-4 px-12 mt-4 cursor-pointer
-      text-primary bg-secondary border-4 border-primary shadow-[6px_6px_0_0_theme(--color-primary)] transition-all duration-200 ease-in-out;
+      text-primary bg-secondary border-4 border-primary shadow-[6px_6px_0_0_var(--color-primary)] transition-all duration-200 ease-in-out;
       @apply hover:translate-x-1.5 hover:translate-y-1.5 hover:shadow-none hover:bg-primary hover:text-secondary;
   }
 }
