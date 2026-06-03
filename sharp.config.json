@@ -8,6 +8,9 @@
   "jpeg": {
     "quality": 65
   },
+  "jpg":{
+    "quality": 65
+  },
   "png": {
     "compressionLevel": 9,
     "effort": 10
