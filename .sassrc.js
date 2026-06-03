@@ -1,3 +1,3 @@
 module.exports = {
-  silenceDeprecations: ['import', 'color-functions', 'global-builtin', 'apply']
+  silenceDeprecations: ['import', 'color-functions', 'global-builtin',]
 }
